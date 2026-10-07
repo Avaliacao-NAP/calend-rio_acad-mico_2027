@@ -48,9 +48,9 @@ Abra `http://localhost:4173/calend-rio_acad-mico_2027/`. No PowerShell, defina `
 
 O site compilado fica em `out/`. O teste da exportação confere os 12 meses, semanas dos módulos, cores das provas, prazos de 2028 e caminhos dos recursos no endereço do repositório.
 
-## Data simulada
+## Data de referência
 
-Foi preservado o teste solicitado de **06/10/2027**. Use **Voltar à data real** na interface para encerrar a simulação no navegador.
+O site usa a data atual de Brasília por padrão e acompanha a mudança dos dias automaticamente. A simulação anterior de 06/10/2027 foi encerrada. É possível selecionar outra data para um teste e usar **Voltar à data real** para encerrá-lo no navegador.
 
 ## Arquivos principais
 

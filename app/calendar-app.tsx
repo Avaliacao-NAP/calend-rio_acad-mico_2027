@@ -15,8 +15,7 @@ import AcademicGantt from "./academic-gantt";
 import {calendarDataIsFresh,fetchLiveCalendar} from "@/lib/calendar-client";
 
 const BASE=process.env.NEXT_PUBLIC_BASE_PATH||"";
-const INITIAL_SIMULATION_DATE="2027-10-06";
-const DATE_SIMULATION_KEY=`academic-calendar-simulation:${INITIAL_SIMULATION_DATE}`;
+const DATE_SIMULATION_KEY="academic-calendar-simulation:manual";
 const moduleStyle=(module:string,colors:Record<string,string>)=>({"--module-color":moduleColor(module,colors),"--module-contrast":moduleContrast(moduleColor(module,colors))} as CSSProperties);
 const intersects=(e:CalendarEvent,start:string,end:string)=>e.start<=end&&e.end>=start;
 const timeBR=(date:string)=>new Intl.DateTimeFormat("pt-BR",{timeZone:"America/Sao_Paulo",hour:"2-digit",minute:"2-digit",second:"2-digit"}).format(new Date(date));
@@ -37,7 +36,7 @@ export default function CalendarApp(){
   const[module,setModule]=useState("all"),[category,setCategory]=useState("all"),[query,setQuery]=useState("");
   const[theme,setTheme]=useState("dark"),[sync,setSync]=useState<"loading"|"live"|"offline">("loading"),[checkedAt,setCheckedAt]=useState("");
   const[busy,setBusy]=useState(false),[realToday,setRealToday]=useState("");
-  const[simulatedDate,setSimulatedDate]=useState(INITIAL_SIMULATION_DATE);
+  const[simulatedDate,setSimulatedDate]=useState("");
   const today=simulatedDate||realToday,simulated=!!simulatedDate;
   const[selectedDay,setSelectedDay]=useState<string|null>(null),[selectedEvent,setSelectedEvent]=useState<CalendarEvent|null>(null),[expandedMonth,setExpandedMonth]=useState<number|null>(null);
   const[view,setView]=useState("matrix");

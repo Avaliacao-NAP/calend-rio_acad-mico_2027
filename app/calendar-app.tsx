@@ -8,14 +8,13 @@ import {Dialog,DialogContent,DialogHeader,DialogTitle,DialogDescription} from "@
 import {Table,TableHeader,TableBody,TableRow,TableHead,TableCell} from "@/components/ui/table";
 import {Progress} from "@/components/ui/progress";
 import {Tooltip,TooltipContent,TooltipProvider,TooltipTrigger} from "@/components/ui/tooltip";
-import {MONTHS,CATEGORIES,br,daysBetween,eventsForAcademicYear,isCalendarDate,moduleColor,moduleContrast,moduleWeeksForRow,monthDays,normalize,periodProgress,status,todayBR,upcomingEvents} from "@/lib/calendar";
+import {MONTHS,CATEGORIES,br,daysBetween,eventsForAcademicYear,moduleColor,moduleContrast,moduleWeeksForRow,monthDays,normalize,periodProgress,status,todayBR,upcomingEvents} from "@/lib/calendar";
 import type {CalendarData,CalendarEvent} from "@/lib/calendar-types";
 import seed from "@/lib/calendar-seed.json";
 import AcademicGantt from "./academic-gantt";
 import {calendarDataIsFresh,fetchLiveCalendar} from "@/lib/calendar-client";
 
 const BASE=process.env.NEXT_PUBLIC_BASE_PATH||"";
-const DATE_SIMULATION_KEY="academic-calendar-simulation:manual";
 const moduleStyle=(module:string,colors:Record<string,string>)=>({"--module-color":moduleColor(module,colors),"--module-contrast":moduleContrast(moduleColor(module,colors))} as CSSProperties);
 const intersects=(e:CalendarEvent,start:string,end:string)=>e.start<=end&&e.end>=start;
 const timeBR=(date:string)=>new Intl.DateTimeFormat("pt-BR",{timeZone:"America/Sao_Paulo",hour:"2-digit",minute:"2-digit",second:"2-digit"}).format(new Date(date));
@@ -35,9 +34,7 @@ export default function CalendarApp(){
   const year=data.academicYear;
   const[module,setModule]=useState("all"),[category,setCategory]=useState("all"),[query,setQuery]=useState("");
   const[theme,setTheme]=useState("dark"),[sync,setSync]=useState<"loading"|"live"|"offline">("loading"),[checkedAt,setCheckedAt]=useState("");
-  const[busy,setBusy]=useState(false),[realToday,setRealToday]=useState("");
-  const[simulatedDate,setSimulatedDate]=useState("");
-  const today=simulatedDate||realToday,simulated=!!simulatedDate;
+  const[busy,setBusy]=useState(false),[today,setToday]=useState("");
   const[selectedDay,setSelectedDay]=useState<string|null>(null),[selectedEvent,setSelectedEvent]=useState<CalendarEvent|null>(null),[expandedMonth,setExpandedMonth]=useState<number|null>(null);
   const[view,setView]=useState("matrix");
   const inflight=useRef(false),controller=useRef<AbortController|null>(null),latestVersion=useRef(seed.version);
@@ -49,22 +46,16 @@ export default function CalendarApp(){
       if(latestVersion.current!==fresh.version){latestVersion.current=fresh.version;setData(fresh);setModule(m=>m==="all"||fresh.modules.includes(m)?m:"all");setSelectedEvent(e=>e?fresh.events.find(item=>item.id===e.id)??null:null);}
       setCheckedAt(fresh.fetchedAt);setSync(calendarDataIsFresh(fresh)?"live":"offline");
     }catch{setSync("offline");}
-    finally{clearTimeout(timeout);inflight.current=false;setBusy(false);setRealToday(todayBR());}
+    finally{clearTimeout(timeout);inflight.current=false;setBusy(false);setToday(todayBR());}
   },[]);
   useEffect(()=>{
-    setRealToday(todayBR());try{const saved=localStorage.getItem("academic-calendar-theme");if(saved==="light")setTheme("light");}catch{}
-    try{const saved=sessionStorage.getItem(DATE_SIMULATION_KEY);if(saved!==null&&(saved===""||isCalendarDate(saved))){setSimulatedDate(saved);}}catch{}
+    setToday(todayBR());try{const saved=localStorage.getItem("academic-calendar-theme");if(saved==="light")setTheme("light");}catch{}
     void refresh();const tick=setInterval(()=>{if(document.visibilityState==="visible")void refresh();},20000);
     const resume=()=>{if(document.visibilityState==="visible")void refresh();};document.addEventListener("visibilitychange",resume);window.addEventListener("online",resume);
     return()=>{clearInterval(tick);controller.current?.abort();document.removeEventListener("visibilitychange",resume);window.removeEventListener("online",resume);};
   },[refresh]);
   useEffect(()=>{document.documentElement.dataset.theme=theme;},[theme]);
   function toggleTheme(){const next=theme==="dark"?"light":"dark";setTheme(next);try{localStorage.setItem("academic-calendar-theme",next);}catch{}}
-  function changeSimulation(date:string){
-    if(date&&!isCalendarDate(date))return;
-    setSimulatedDate(date);setRealToday(todayBR());
-    try{sessionStorage.setItem(DATE_SIMULATION_KEY,date);}catch{}
-  }
   const academicEvents=useMemo(()=>eventsForAcademicYear(data.events,year),[data.events,year]);
   const timelineEnd=academicEvents.reduce((end,event)=>event.end>end?event.end:end,`${year}-12-31`);
   const filtered=useMemo(()=>academicEvents.filter(e=>(module==="all"||e.module===module||e.module==="Geral")&&(category==="all"||e.category===category)&&(!query||normalize(`${e.title} ${e.category} módulo ${e.module}`).includes(normalize(query)))),[academicEvents,module,category,query]);
@@ -137,10 +128,6 @@ export default function CalendarApp(){
         </span></TooltipTrigger><TooltipContent side="bottom" sideOffset={8} className="sync-tooltip">{syncLabel}. {syncDetail}</TooltipContent></Tooltip></TooltipProvider>
         <button className="icon-btn" disabled={busy} onClick={()=>void refresh()} aria-label="Atualizar agora"><RefreshCw size={17} className={busy?"spin":""}/></button>
       </div></div>
-      <div className={`date-reference ${simulated?"is-simulated":""}`}>
-        <div className="date-reference-summary" role="status"><Clock3 size={19}/><div><strong>{simulated?`Simulação ativa · ${br(today)}`:`Data real · ${br(today)} (Brasília)`}</strong><p>{simulated?"Calendário, módulos, prazos, matriz e Gantt consideram esta data como hoje.":"Todas as visualizações acompanham a data atual de Brasília."}</p></div></div>
-        <div className="date-reference-actions"><label htmlFor="simulation-date">Simular outra data<input id="simulation-date" type="date" value={today} min="0001-01-01" max="9999-12-31" onChange={event=>{if(event.target.value)changeSimulation(event.target.value);}}/></label>{simulated&&<button className="icon-btn" onClick={()=>changeSimulation("")}>Voltar à data real</button>}</div>
-      </div>
       <div className="calendar-controls"><Tabs value={module} onValueChange={setModule} className="module-tabs"><TabsList><TabsTrigger value="all"><LayoutGrid size={15}/>Todos os módulos</TabsTrigger>{data.modules.map(m=><TabsTrigger key={m} value={m} style={modStyle(m)}><i/>Módulo {m}</TabsTrigger>)}</TabsList></Tabs><div className="search-box"><Search size={17}/><input value={query} onChange={e=>setQuery(e.target.value)} aria-label="Buscar atividade" placeholder="Buscar atividade..."/>{query&&<button onClick={()=>setQuery("")} aria-label="Limpar busca"><X size={16}/></button>}</div><Choice label="Categoria de atividades" value={category} onChange={setCategory} options={[{value:"all",label:"Todas as categorias"},...CATEGORIES.map(c=>({value:c,label:c})),{value:"Feriados e pontes",label:"Feriados e pontes"}]}/></div>
       <div className="calendar-meta"><p>Clique em um dia para consultar os prazos ou amplie um mês.</p><span>{filtered.length} períodos e atividades{activeFilters&&<button className="text-button" onClick={clearFilters}>Limpar filtros</button>}</span></div>
       <div className="annual-grid">{MONTHS.map((name,month)=>{
@@ -170,7 +157,7 @@ export default function CalendarApp(){
         const titles=groups.filter(title=>filtered.some(e=>e.title===title&&e.category===cat));if(!titles.length)return null;
         return <MatrixGroup key={cat} category={cat} titles={titles} events={filtered} modules={visibleModules} today={today} onEvent={setSelectedEvent}/>;
       })}{!filtered.length&&<TableRow><TableCell colSpan={visibleModules.length*2+1}><div className="empty-inline">Nenhuma atividade na tabela para estes filtros.{category==="Feriados e pontes"&&" Consulte as datas destacadas no calendário anual."}</div></TableCell></TableRow>}</TableBody></Table></div></TabsContent>
-      <TabsContent value="gantt"><AcademicGantt events={filtered} year={year} endDate={timelineEnd} modules={data.modules} colors={data.moduleColors} module={module} onModule={setModule} today={today} simulated={simulated} onEvent={setSelectedEvent}/></TabsContent>
+      <TabsContent value="gantt"><AcademicGantt events={filtered} year={year} endDate={timelineEnd} modules={data.modules} colors={data.moduleColors} module={module} onModule={setModule} today={today} onEvent={setSelectedEvent}/></TabsContent>
     </Tabs></section>
 
     <section className="source-notes"><BookOpen size={19}/><div><strong>Orientações acadêmicas</strong>{data.notes.map(n=><p key={n}>{n}</p>)}</div></section>
@@ -178,7 +165,7 @@ export default function CalendarApp(){
 
     <Dialog open={expandedMonth!==null} onOpenChange={open=>{if(!open)setExpandedMonth(null);}}><DialogContent className="month-dialog"><DialogHeader><DialogTitle>{expandedMonth!==null?MONTHS[expandedMonth]:""} {year}</DialogTitle><DialogDescription>Selecione um dia para consultar todos os períodos e atividades.</DialogDescription></DialogHeader>{expandedMonth!==null&&<><div className="month-dialog-nav"><button className="icon-btn" aria-label="Mês anterior" disabled={expandedMonth===0} onClick={()=>setExpandedMonth(Math.max(0,expandedMonth-1))}><ChevronLeft size={18}/></button><span>{MONTHS[expandedMonth]} {year}</span><button className="icon-btn" aria-label="Mês seguinte" disabled={expandedMonth===11} onClick={()=>setExpandedMonth(Math.min(11,expandedMonth+1))}><ChevronRight size={18}/></button></div>{renderWeekdays(true)}<div className="month-days large-month">{renderMonthDays(expandedMonth,true)}</div></>}</DialogContent></Dialog>
     <Dialog open={selectedDay!==null} onOpenChange={open=>{if(!open)setSelectedDay(null);}}><DialogContent className="day-dialog"><DialogHeader><DialogTitle>{selectedDay?br(selectedDay):""}</DialogTitle><DialogDescription>Períodos e atividades vigentes neste dia, conforme os filtros.</DialogDescription></DialogHeader>{selectedDay&&<div className="day-details">{dayMarks(selectedDay).map(m=><div className={`source-marker ${m.kind} ${["exam","substitute","results"].includes(m.kind)?"academic-highlight":""}`} style={{"--day-highlight":m.color,"--day-highlight-contrast":moduleContrast(m.color)} as CSSProperties} key={m.sourceCell}><CalendarCheck2 size={17}/><span><strong>{m.label}</strong></span></div>)}{dayEvents(selectedDay).map(e=><EventCard key={e.id} event={e} today={today} colors={data.moduleColors} onSelect={setSelectedEvent}/>)}{!dayEvents(selectedDay).length&&!dayMarks(selectedDay).length&&<p className="empty-inline">Nenhuma atividade ou marcação neste dia para os filtros selecionados.</p>}</div>}</DialogContent></Dialog>
-    <Dialog open={!!selectedEvent} onOpenChange={open=>{if(!open)setSelectedEvent(null);}}><DialogContent className="event-dialog"><DialogHeader><DialogTitle>{selectedEvent?.title}</DialogTitle><DialogDescription>{selectedEvent?.category} · {selectedEvent&&eventLabel(selectedEvent)}</DialogDescription></DialogHeader>{selectedEvent&&<><div className="event-period" style={modStyle(selectedEvent.module)}><div><span>Início</span><strong>{br(selectedEvent.start)}</strong></div><div><span>Término</span><strong>{br(selectedEvent.end)}</strong></div></div><span className="status-badge">{status(selectedEvent,today)}</span>{simulated&&<p className="simulation-note">Situação simulada em {br(today)}.</p>}<p className="quiet">{daysBetween(selectedEvent.start,selectedEvent.end)+1} {selectedEvent.start===selectedEvent.end?"dia":"dias corridos"}, incluindo as datas inicial e final.</p></>}</DialogContent></Dialog>
+    <Dialog open={!!selectedEvent} onOpenChange={open=>{if(!open)setSelectedEvent(null);}}><DialogContent className="event-dialog"><DialogHeader><DialogTitle>{selectedEvent?.title}</DialogTitle><DialogDescription>{selectedEvent?.category} · {selectedEvent&&eventLabel(selectedEvent)}</DialogDescription></DialogHeader>{selectedEvent&&<><div className="event-period" style={modStyle(selectedEvent.module)}><div><span>Início</span><strong>{br(selectedEvent.start)}</strong></div><div><span>Término</span><strong>{br(selectedEvent.end)}</strong></div></div><span className="status-badge">{status(selectedEvent,today)}</span><p className="quiet">{daysBetween(selectedEvent.start,selectedEvent.end)+1} {selectedEvent.start===selectedEvent.end?"dia":"dias corridos"}, incluindo as datas inicial e final.</p></>}</DialogContent></Dialog>
   </main>;
 }
 

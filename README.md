@@ -50,7 +50,7 @@ O site compilado fica em `out/`. O teste da exportação confere os 12 meses, se
 
 ## Data de referência
 
-O site usa a data atual de Brasília por padrão e acompanha a mudança dos dias automaticamente. A simulação anterior de 06/10/2027 foi encerrada. É possível selecionar outra data para um teste e usar **Voltar à data real** para encerrá-lo no navegador.
+O calendário, os módulos em foco, os próximos prazos e o Gantt usam a data atual de Brasília e acompanham a mudança dos dias automaticamente. A interface pública não oferece simulação de datas.
 
 ## Arquivos principais
 

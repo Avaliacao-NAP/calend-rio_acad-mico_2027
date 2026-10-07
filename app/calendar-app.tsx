@@ -134,8 +134,8 @@ export default function CalendarApp(){
     <section className="annual-section" aria-labelledby="annual-title">
       <div className="annual-heading"><div><h2 id="annual-title"><CalendarDays size={25}/>Calendário anual<span className="annual-year">{year}</span></h2></div><div className="annual-tools">
         <TooltipProvider delayDuration={200}><Tooltip><TooltipTrigger asChild><span className={`sync-status ${sync}`} tabIndex={0} role="status" aria-live="polite" aria-atomic="true">
-          {sync==="live"?<Globe size={15} aria-hidden="true"/>:sync==="offline"?<WifiOff size={15} aria-hidden="true"/>:<RefreshCw size={15} className="spin" aria-hidden="true"/>}<span>{syncLabel}</span>
-        </span></TooltipTrigger><TooltipContent side="bottom" sideOffset={8} className="sync-tooltip">{syncDetail}</TooltipContent></Tooltip></TooltipProvider>
+          {sync==="live"?<Globe size={15} aria-hidden="true"/>:sync==="offline"?<WifiOff size={15} aria-hidden="true"/>:<RefreshCw size={15} className="spin" aria-hidden="true"/>}<span className="sr-only">{syncLabel}</span>
+        </span></TooltipTrigger><TooltipContent side="bottom" sideOffset={8} className="sync-tooltip">{syncLabel}. {syncDetail}</TooltipContent></Tooltip></TooltipProvider>
         <button className="icon-btn" disabled={busy} onClick={()=>void refresh()} aria-label="Atualizar agora"><RefreshCw size={17} className={busy?"spin":""}/></button>
       </div></div>
       <div className={`date-reference ${simulated?"is-simulated":""}`}>

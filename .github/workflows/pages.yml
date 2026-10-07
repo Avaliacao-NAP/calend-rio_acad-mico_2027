@@ -23,14 +23,6 @@ jobs:
     outputs:
       ready: ${{ steps.enabled.outputs.ready }}
     steps:
-      - uses: actions/checkout@v6
-      - uses: pnpm/action-setup@v4
-        with:
-          version: 11.25.0
-      - uses: actions/setup-node@v6
-        with:
-          node-version: '24'
-          cache: pnpm
       - name: Verificar se GitHub Pages foi ativado
         id: enabled
         uses: actions/github-script@v8
@@ -45,6 +37,17 @@ jobs:
               core.setOutput('ready', 'false');
               core.notice('Ative GitHub Pages em Settings > Pages; a versão pronta permanece no repositório.');
             }
+      - uses: actions/checkout@v6
+        if: steps.enabled.outputs.ready == 'true'
+      - uses: pnpm/action-setup@v4
+        if: steps.enabled.outputs.ready == 'true'
+        with:
+          version: 11.25.0
+      - uses: actions/setup-node@v6
+        if: steps.enabled.outputs.ready == 'true'
+        with:
+          node-version: '24'
+          cache: pnpm
       - uses: actions/configure-pages@v5
         if: steps.enabled.outputs.ready == 'true'
         id: pages

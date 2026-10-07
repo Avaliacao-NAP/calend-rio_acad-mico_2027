@@ -7,13 +7,12 @@
   },
   "scripts": {
     "dev": "next dev",
-    "build": "node scripts/build-cloudflare.mjs",
-    "build:cloudflare": "node scripts/build-cloudflare.mjs",
+    "build": "node scripts/build-github.mjs",
+    "build:github": "node scripts/build-github.mjs",
     "sync:data": "node scripts/sync-calendar.mjs",
-    "test": "node scripts/test-calendar.mjs && node scripts/test-cloudflare-sync.mjs",
+    "test": "node scripts/test-calendar.mjs && node scripts/test-static-sync.mjs",
     "test:export": "node scripts/test-export.mjs",
-    "preview": "wrangler pages dev out",
-    "preview:static": "node scripts/preview.mjs"
+    "preview": "node scripts/preview.mjs"
   },
   "dependencies": {
     "@base-ui/react": "^1.7.0",

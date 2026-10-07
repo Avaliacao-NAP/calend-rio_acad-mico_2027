@@ -3,7 +3,7 @@ import {readFile} from "node:fs/promises";
 import {once} from "node:events";
 import {staticServer} from "./preview.mjs";
 
-const base=process.env.NEXT_PUBLIC_BASE_PATH??"";
+const base=process.env.NEXT_PUBLIC_BASE_PATH??"/calend-rio_acad-mico_2027";
 const server=staticServer("out",base);
 server.listen(0,"127.0.0.1");
 await once(server,"listening");

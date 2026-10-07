@@ -21,7 +21,7 @@ export function staticServer(directory,basePath=""){
 }
 
 if(process.argv[1]&&import.meta.url===pathToFileURL(resolve(process.argv[1])).href){
-  const prefix=process.argv[2]??"",directory=process.argv[3]??"out";
+  const prefix=process.argv[2]??"/calend-rio_acad-mico_2027",directory=process.argv[3]??"out";
   const server=staticServer(directory,prefix),port=Number(process.env.PORT||4173);
   server.listen(port,"127.0.0.1",()=>console.log(`Calendário: http://localhost:${port}${prefix}/`));
 }

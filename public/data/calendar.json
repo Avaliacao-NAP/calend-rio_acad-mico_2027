@@ -1,0 +1,1443 @@
+{
+  "title": "CALENDÁRIO ACADÊMICO GRADUAÇÃO 2027 (EAD e SEMIPRESENCIAL)",
+  "sheetName": "Calendário Acadêmico 2027",
+  "academicYear": 2027,
+  "years": [
+    2027,
+    2028
+  ],
+  "modules": [
+    "51",
+    "52",
+    "53",
+    "54"
+  ],
+  "moduleColors": {
+    "51": "#CFE2F3",
+    "52": "#FCE5CD",
+    "53": "#D9EAD3",
+    "54": "#FFF2CC"
+  },
+  "events": [
+    {
+      "id": "51-K39",
+      "title": "Período módulo",
+      "category": "Períodos letivos",
+      "module": "51",
+      "start": "2027-02-22",
+      "end": "2027-05-01",
+      "sourceCell": "K39",
+      "sourceText": "22/02 a 01/05/2027",
+      "kind": "period"
+    },
+    {
+      "id": "52-O39",
+      "title": "Período módulo",
+      "category": "Períodos letivos",
+      "module": "52",
+      "start": "2027-05-03",
+      "end": "2027-07-10",
+      "sourceCell": "O39",
+      "sourceText": "03/05 a 10/07/2027",
+      "kind": "period"
+    },
+    {
+      "id": "53-S39",
+      "title": "Período módulo",
+      "category": "Períodos letivos",
+      "module": "53",
+      "start": "2027-07-19",
+      "end": "2027-09-25",
+      "sourceCell": "S39",
+      "sourceText": "19/07 a 25/09/2027",
+      "kind": "period"
+    },
+    {
+      "id": "54-W39",
+      "title": "Período módulo",
+      "category": "Períodos letivos",
+      "module": "54",
+      "start": "2027-09-27",
+      "end": "2027-12-04",
+      "sourceCell": "W39",
+      "sourceText": "27/09 a 04/12/2027",
+      "kind": "period"
+    },
+    {
+      "id": "51-K40",
+      "title": "Aula Inaugural - Ingressantes",
+      "category": "Aulas e atividades",
+      "module": "51",
+      "start": "2027-02-16",
+      "end": "2027-02-16",
+      "sourceCell": "K40",
+      "sourceText": "16/02/2027",
+      "kind": "activity"
+    },
+    {
+      "id": "52-O40",
+      "title": "Aula Inaugural - Ingressantes",
+      "category": "Aulas e atividades",
+      "module": "52",
+      "start": "2027-04-27",
+      "end": "2027-04-27",
+      "sourceCell": "O40",
+      "sourceText": "27/04/2027",
+      "kind": "activity"
+    },
+    {
+      "id": "53-S40",
+      "title": "Aula Inaugural - Ingressantes",
+      "category": "Aulas e atividades",
+      "module": "53",
+      "start": "2027-07-13",
+      "end": "2027-07-13",
+      "sourceCell": "S40",
+      "sourceText": "13/07/2027",
+      "kind": "activity"
+    },
+    {
+      "id": "54-W40",
+      "title": "Aula Inaugural - Ingressantes",
+      "category": "Aulas e atividades",
+      "module": "54",
+      "start": "2027-09-21",
+      "end": "2027-09-21",
+      "sourceCell": "W40",
+      "sourceText": "21/09/2027",
+      "kind": "activity"
+    },
+    {
+      "id": "51-K42",
+      "title": "Realização de Atividade do Hub de Atualidades",
+      "category": "Aulas e atividades",
+      "module": "51",
+      "start": "2027-03-08",
+      "end": "2027-04-11",
+      "sourceCell": "K42",
+      "sourceText": "08/03 a 11/04/2027",
+      "kind": "activity"
+    },
+    {
+      "id": "52-O42",
+      "title": "Realização de Atividade do Hub de Atualidades",
+      "category": "Aulas e atividades",
+      "module": "52",
+      "start": "2027-05-17",
+      "end": "2027-06-20",
+      "sourceCell": "O42",
+      "sourceText": "17/05 a 20/06/2027",
+      "kind": "activity"
+    },
+    {
+      "id": "53-S42",
+      "title": "Realização de Atividade do Hub de Atualidades",
+      "category": "Aulas e atividades",
+      "module": "53",
+      "start": "2027-08-02",
+      "end": "2027-09-05",
+      "sourceCell": "S42",
+      "sourceText": "02/08 a 05/09/2027",
+      "kind": "activity"
+    },
+    {
+      "id": "54-W42",
+      "title": "Realização de Atividade do Hub de Atualidades",
+      "category": "Aulas e atividades",
+      "module": "54",
+      "start": "2027-10-11",
+      "end": "2027-11-14",
+      "sourceCell": "W42",
+      "sourceText": "11/10 a 14/11/2027",
+      "kind": "activity"
+    },
+    {
+      "id": "51-K43",
+      "title": "Agendamento de Prova Digital (presencial no polo)",
+      "category": "Provas regulares",
+      "module": "51",
+      "start": "2027-04-12",
+      "end": "2027-04-29",
+      "sourceCell": "K43",
+      "sourceText": "12/04 a 29/04/2027",
+      "kind": "activity"
+    },
+    {
+      "id": "52-O43",
+      "title": "Agendamento de Prova Digital (presencial no polo)",
+      "category": "Provas regulares",
+      "module": "52",
+      "start": "2027-06-21",
+      "end": "2027-07-09",
+      "sourceCell": "O43",
+      "sourceText": "21/06 a 09/07/2027",
+      "kind": "activity"
+    },
+    {
+      "id": "53-S43",
+      "title": "Agendamento de Prova Digital (presencial no polo)",
+      "category": "Provas regulares",
+      "module": "53",
+      "start": "2027-09-06",
+      "end": "2027-09-24",
+      "sourceCell": "S43",
+      "sourceText": "06/09 a 24/09/2027",
+      "kind": "activity"
+    },
+    {
+      "id": "54-W43",
+      "title": "Agendamento de Prova Digital (presencial no polo)",
+      "category": "Provas regulares",
+      "module": "54",
+      "start": "2027-11-16",
+      "end": "2027-12-03",
+      "sourceCell": "W43",
+      "sourceText": "16/11 a 03/12/2027",
+      "kind": "activity"
+    },
+    {
+      "id": "51-K44",
+      "title": "Realização de Prova Digital (presencial no polo)",
+      "category": "Provas regulares",
+      "module": "51",
+      "start": "2027-04-19",
+      "end": "2027-04-30",
+      "sourceCell": "K44",
+      "sourceText": "19/04 a 30/04/2027",
+      "kind": "activity"
+    },
+    {
+      "id": "52-O44",
+      "title": "Realização de Prova Digital (presencial no polo)",
+      "category": "Provas regulares",
+      "module": "52",
+      "start": "2027-06-28",
+      "end": "2027-07-10",
+      "sourceCell": "O44",
+      "sourceText": "28/06 a 10/07/2027",
+      "kind": "activity"
+    },
+    {
+      "id": "53-S44",
+      "title": "Realização de Prova Digital (presencial no polo)",
+      "category": "Provas regulares",
+      "module": "53",
+      "start": "2027-09-13",
+      "end": "2027-09-25",
+      "sourceCell": "S44",
+      "sourceText": "13/09 a 25/09/2027",
+      "kind": "activity"
+    },
+    {
+      "id": "54-W44",
+      "title": "Realização de Prova Digital (presencial no polo)",
+      "category": "Provas regulares",
+      "module": "54",
+      "start": "2027-11-22",
+      "end": "2027-12-04",
+      "sourceCell": "W44",
+      "sourceText": "22/11 a 04/12/2027",
+      "kind": "activity"
+    },
+    {
+      "id": "51-K45",
+      "title": "Realização de Prova Online (no Studeo)",
+      "category": "Provas regulares",
+      "module": "51",
+      "start": "2027-04-19",
+      "end": "2027-04-30",
+      "sourceCell": "K45",
+      "sourceText": "19/04 a 30/04/2027",
+      "kind": "activity"
+    },
+    {
+      "id": "52-O45",
+      "title": "Realização de Prova Online (no Studeo)",
+      "category": "Provas regulares",
+      "module": "52",
+      "start": "2027-06-28",
+      "end": "2027-07-10",
+      "sourceCell": "O45",
+      "sourceText": "28/06 a 10/07/2027",
+      "kind": "activity"
+    },
+    {
+      "id": "53-S45",
+      "title": "Realização de Prova Online (no Studeo)",
+      "category": "Provas regulares",
+      "module": "53",
+      "start": "2027-09-13",
+      "end": "2027-09-25",
+      "sourceCell": "S45",
+      "sourceText": "13/09 a 25/09/2027",
+      "kind": "activity"
+    },
+    {
+      "id": "54-W45",
+      "title": "Realização de Prova Online (no Studeo)",
+      "category": "Provas regulares",
+      "module": "54",
+      "start": "2027-11-22",
+      "end": "2027-12-04",
+      "sourceCell": "W45",
+      "sourceText": "22/11 a 04/12/2027",
+      "kind": "activity"
+    },
+    {
+      "id": "51-K46",
+      "title": "Publicação de Notas",
+      "category": "Notas e revisão",
+      "module": "51",
+      "start": "2027-05-14",
+      "end": "2027-05-14",
+      "sourceCell": "K46",
+      "sourceText": "14/05/2027",
+      "kind": "activity"
+    },
+    {
+      "id": "52-O46",
+      "title": "Publicação de Notas",
+      "category": "Notas e revisão",
+      "module": "52",
+      "start": "2027-07-23",
+      "end": "2027-07-23",
+      "sourceCell": "O46",
+      "sourceText": "23/07/2027",
+      "kind": "activity"
+    },
+    {
+      "id": "53-S46",
+      "title": "Publicação de Notas",
+      "category": "Notas e revisão",
+      "module": "53",
+      "start": "2027-10-08",
+      "end": "2027-10-08",
+      "sourceCell": "S46",
+      "sourceText": "08/10/2027",
+      "kind": "activity"
+    },
+    {
+      "id": "54-W46",
+      "title": "Publicação de Notas",
+      "category": "Notas e revisão",
+      "module": "54",
+      "start": "2027-12-17",
+      "end": "2027-12-17",
+      "sourceCell": "W46",
+      "sourceText": "17/12/2027",
+      "kind": "activity"
+    },
+    {
+      "id": "51-K47",
+      "title": "Visualização de Cópia da Prova Digital",
+      "category": "Notas e revisão",
+      "module": "51",
+      "start": "2027-05-17",
+      "end": "2027-05-23",
+      "sourceCell": "K47",
+      "sourceText": "17/05 a 23/05/2027",
+      "kind": "activity"
+    },
+    {
+      "id": "52-O47",
+      "title": "Visualização de Cópia da Prova Digital",
+      "category": "Notas e revisão",
+      "module": "52",
+      "start": "2027-07-26",
+      "end": "2027-08-01",
+      "sourceCell": "O47",
+      "sourceText": "26/07 a 01/08/2027",
+      "kind": "activity"
+    },
+    {
+      "id": "53-S47",
+      "title": "Visualização de Cópia da Prova Digital",
+      "category": "Notas e revisão",
+      "module": "53",
+      "start": "2027-10-11",
+      "end": "2027-10-17",
+      "sourceCell": "S47",
+      "sourceText": "11/10 a 17/10/2027",
+      "kind": "activity"
+    },
+    {
+      "id": "54-W47",
+      "title": "Visualização de Cópia da Prova Digital",
+      "category": "Notas e revisão",
+      "module": "54",
+      "start": "2027-12-20",
+      "end": "2027-12-26",
+      "sourceCell": "W47",
+      "sourceText": "20/12 a a 26/12/2027",
+      "kind": "activity"
+    },
+    {
+      "id": "51-K48",
+      "title": "Solicitação de Prova Online Substitutiva",
+      "category": "Substitutivas",
+      "module": "51",
+      "start": "2027-05-24",
+      "end": "2027-06-04",
+      "sourceCell": "K48",
+      "sourceText": "24/05 a 04/06/2027",
+      "kind": "activity"
+    },
+    {
+      "id": "52-O48",
+      "title": "Solicitação de Prova Online Substitutiva",
+      "category": "Substitutivas",
+      "module": "52",
+      "start": "2027-08-09",
+      "end": "2027-08-20",
+      "sourceCell": "O48",
+      "sourceText": "09/08 a 20/08/2027",
+      "kind": "activity"
+    },
+    {
+      "id": "53-S48",
+      "title": "Solicitação de Prova Online Substitutiva",
+      "category": "Substitutivas",
+      "module": "53",
+      "start": "2027-10-18",
+      "end": "2027-10-29",
+      "sourceCell": "S48",
+      "sourceText": "18/10 a 29/10/2027",
+      "kind": "activity"
+    },
+    {
+      "id": "54-W48",
+      "title": "Solicitação de Prova Online Substitutiva",
+      "category": "Substitutivas",
+      "module": "54",
+      "start": "2028-01-10",
+      "end": "2028-01-21",
+      "sourceCell": "W48",
+      "sourceText": "10/01 a 21/01/2028",
+      "kind": "activity"
+    },
+    {
+      "id": "51-K49",
+      "title": "Solicitação de MAPA Substitutivo",
+      "category": "Substitutivas",
+      "module": "51",
+      "start": "2027-05-24",
+      "end": "2027-06-04",
+      "sourceCell": "K49",
+      "sourceText": "24/05 a 04/06/2027",
+      "kind": "activity"
+    },
+    {
+      "id": "52-O49",
+      "title": "Solicitação de MAPA Substitutivo",
+      "category": "Substitutivas",
+      "module": "52",
+      "start": "2027-08-09",
+      "end": "2027-08-20",
+      "sourceCell": "O49",
+      "sourceText": "09/08 a 20/08/2027",
+      "kind": "activity"
+    },
+    {
+      "id": "53-S49",
+      "title": "Solicitação de MAPA Substitutivo",
+      "category": "Substitutivas",
+      "module": "53",
+      "start": "2027-10-18",
+      "end": "2027-10-29",
+      "sourceCell": "S49",
+      "sourceText": "18/10 a 29/10/2027",
+      "kind": "activity"
+    },
+    {
+      "id": "54-W49",
+      "title": "Solicitação de MAPA Substitutivo",
+      "category": "Substitutivas",
+      "module": "54",
+      "start": "2028-01-10",
+      "end": "2028-01-21",
+      "sourceCell": "W49",
+      "sourceText": "10/01 a 21/01/2028",
+      "kind": "activity"
+    },
+    {
+      "id": "51-K50",
+      "title": "Agendamento de Prova Digital Substitutiva (presencial no polo)",
+      "category": "Substitutivas",
+      "module": "51",
+      "start": "2027-05-24",
+      "end": "2027-06-04",
+      "sourceCell": "K50",
+      "sourceText": "24/05 a 04/06/2027",
+      "kind": "activity"
+    },
+    {
+      "id": "52-O50",
+      "title": "Agendamento de Prova Digital Substitutiva (presencial no polo)",
+      "category": "Substitutivas",
+      "module": "52",
+      "start": "2027-08-09",
+      "end": "2027-08-20",
+      "sourceCell": "O50",
+      "sourceText": "09/08 a 20/08/2027",
+      "kind": "activity"
+    },
+    {
+      "id": "53-S50",
+      "title": "Agendamento de Prova Digital Substitutiva (presencial no polo)",
+      "category": "Substitutivas",
+      "module": "53",
+      "start": "2027-10-18",
+      "end": "2027-10-29",
+      "sourceCell": "S50",
+      "sourceText": "18/10 a 29/10/2027",
+      "kind": "activity"
+    },
+    {
+      "id": "54-W50",
+      "title": "Agendamento de Prova Digital Substitutiva (presencial no polo)",
+      "category": "Substitutivas",
+      "module": "54",
+      "start": "2028-01-10",
+      "end": "2028-01-21",
+      "sourceCell": "W50",
+      "sourceText": "10/01 a 21/01/2028",
+      "kind": "activity"
+    },
+    {
+      "id": "51-K51",
+      "title": "Realização de Prova Digital Substitutiva (presencial no polo)",
+      "category": "Substitutivas",
+      "module": "51",
+      "start": "2027-05-31",
+      "end": "2027-06-05",
+      "sourceCell": "K51",
+      "sourceText": "31/05 a 05/06/2027",
+      "kind": "activity"
+    },
+    {
+      "id": "52-O51",
+      "title": "Realização de Prova Digital Substitutiva (presencial no polo)",
+      "category": "Substitutivas",
+      "module": "52",
+      "start": "2027-08-16",
+      "end": "2027-08-21",
+      "sourceCell": "O51",
+      "sourceText": "16/08 a 21/08/2027",
+      "kind": "activity"
+    },
+    {
+      "id": "53-S51",
+      "title": "Realização de Prova Digital Substitutiva (presencial no polo)",
+      "category": "Substitutivas",
+      "module": "53",
+      "start": "2027-10-25",
+      "end": "2027-10-30",
+      "sourceCell": "S51",
+      "sourceText": "25/10 a 30/10/2027",
+      "kind": "activity"
+    },
+    {
+      "id": "54-W51",
+      "title": "Realização de Prova Digital Substitutiva (presencial no polo)",
+      "category": "Substitutivas",
+      "module": "54",
+      "start": "2028-01-17",
+      "end": "2028-01-22",
+      "sourceCell": "W51",
+      "sourceText": "17/01 a 22/01/2028",
+      "kind": "activity"
+    },
+    {
+      "id": "51-K52",
+      "title": "Realização de Prova Online Substitutiva (no Studeo)",
+      "category": "Substitutivas",
+      "module": "51",
+      "start": "2027-05-31",
+      "end": "2027-06-06",
+      "sourceCell": "K52",
+      "sourceText": "31/05 a 06/06/2027",
+      "kind": "activity"
+    },
+    {
+      "id": "52-O52",
+      "title": "Realização de Prova Online Substitutiva (no Studeo)",
+      "category": "Substitutivas",
+      "module": "52",
+      "start": "2027-08-16",
+      "end": "2027-08-22",
+      "sourceCell": "O52",
+      "sourceText": "16/08 a 22/08/2027",
+      "kind": "activity"
+    },
+    {
+      "id": "53-S52",
+      "title": "Realização de Prova Online Substitutiva (no Studeo)",
+      "category": "Substitutivas",
+      "module": "53",
+      "start": "2027-10-25",
+      "end": "2027-10-31",
+      "sourceCell": "S52",
+      "sourceText": "25/10 a 31/10/2027",
+      "kind": "activity"
+    },
+    {
+      "id": "54-W52",
+      "title": "Realização de Prova Online Substitutiva (no Studeo)",
+      "category": "Substitutivas",
+      "module": "54",
+      "start": "2028-01-17",
+      "end": "2028-01-23",
+      "sourceCell": "W52",
+      "sourceText": "17/01 a 23/01/2028",
+      "kind": "activity"
+    },
+    {
+      "id": "51-K53",
+      "title": "Realização de MAPA Substitutivo",
+      "category": "Substitutivas",
+      "module": "51",
+      "start": "2027-05-31",
+      "end": "2027-06-06",
+      "sourceCell": "K53",
+      "sourceText": "31/05 a 06/06/2027",
+      "kind": "activity"
+    },
+    {
+      "id": "52-O53",
+      "title": "Realização de MAPA Substitutivo",
+      "category": "Substitutivas",
+      "module": "52",
+      "start": "2027-08-16",
+      "end": "2027-08-22",
+      "sourceCell": "O53",
+      "sourceText": "16/08 a 22/08/2027",
+      "kind": "activity"
+    },
+    {
+      "id": "53-S53",
+      "title": "Realização de MAPA Substitutivo",
+      "category": "Substitutivas",
+      "module": "53",
+      "start": "2027-10-25",
+      "end": "2027-10-31",
+      "sourceCell": "S53",
+      "sourceText": "25/10 a 31/10/2027",
+      "kind": "activity"
+    },
+    {
+      "id": "54-W53",
+      "title": "Realização de MAPA Substitutivo",
+      "category": "Substitutivas",
+      "module": "54",
+      "start": "2028-01-17",
+      "end": "2028-01-23",
+      "sourceCell": "W53",
+      "sourceText": "17/01 a 23/01/2028",
+      "kind": "activity"
+    },
+    {
+      "id": "51-K54",
+      "title": "Publicação de Nota (Substitutiva)",
+      "category": "Substitutivas",
+      "module": "51",
+      "start": "2027-06-18",
+      "end": "2027-06-18",
+      "sourceCell": "K54",
+      "sourceText": "18/06/2027",
+      "kind": "activity"
+    },
+    {
+      "id": "52-O54",
+      "title": "Publicação de Nota (Substitutiva)",
+      "category": "Substitutivas",
+      "module": "52",
+      "start": "2027-09-03",
+      "end": "2027-09-03",
+      "sourceCell": "O54",
+      "sourceText": "03/09/2027",
+      "kind": "activity"
+    },
+    {
+      "id": "53-S54",
+      "title": "Publicação de Nota (Substitutiva)",
+      "category": "Substitutivas",
+      "module": "53",
+      "start": "2027-11-12",
+      "end": "2027-11-12",
+      "sourceCell": "S54",
+      "sourceText": "12/11/2027",
+      "kind": "activity"
+    },
+    {
+      "id": "54-W54",
+      "title": "Publicação de Nota (Substitutiva)",
+      "category": "Substitutivas",
+      "module": "54",
+      "start": "2028-02-04",
+      "end": "2028-02-04",
+      "sourceCell": "W54",
+      "sourceText": "04/02/2028",
+      "kind": "activity"
+    },
+    {
+      "id": "51-K55",
+      "title": "Visualização de Cópia da Prova Digital Substitutiva",
+      "category": "Substitutivas",
+      "module": "51",
+      "start": "2027-06-21",
+      "end": "2027-06-27",
+      "sourceCell": "K55",
+      "sourceText": "21/06 a 27/06/2027",
+      "kind": "activity"
+    },
+    {
+      "id": "52-O55",
+      "title": "Visualização de Cópia da Prova Digital Substitutiva",
+      "category": "Substitutivas",
+      "module": "52",
+      "start": "2027-09-06",
+      "end": "2027-09-12",
+      "sourceCell": "O55",
+      "sourceText": "06/09 a 12/09/2027",
+      "kind": "activity"
+    },
+    {
+      "id": "53-S55",
+      "title": "Visualização de Cópia da Prova Digital Substitutiva",
+      "category": "Substitutivas",
+      "module": "53",
+      "start": "2027-11-15",
+      "end": "2027-11-21",
+      "sourceCell": "S55",
+      "sourceText": "15/11 a 21/11/2027",
+      "kind": "activity"
+    },
+    {
+      "id": "54-W55",
+      "title": "Visualização de Cópia da Prova Digital Substitutiva",
+      "category": "Substitutivas",
+      "module": "54",
+      "start": "2028-02-07",
+      "end": "2028-02-13",
+      "sourceCell": "W55",
+      "sourceText": "07/02 a 13/02/2028",
+      "kind": "activity"
+    }
+  ],
+  "marks": [
+    {
+      "date": "2027-01-01",
+      "label": "Feriado",
+      "kind": "holiday",
+      "color": "#FFFF00",
+      "sourceCell": "I5"
+    },
+    {
+      "date": "2027-01-18",
+      "label": "Provas Substitutivas",
+      "kind": "substitute",
+      "color": "#CC66FF",
+      "sourceCell": "E8"
+    },
+    {
+      "date": "2027-01-19",
+      "label": "Provas Substitutivas",
+      "kind": "substitute",
+      "color": "#CC66FF",
+      "sourceCell": "F8"
+    },
+    {
+      "date": "2027-01-20",
+      "label": "Provas Substitutivas",
+      "kind": "substitute",
+      "color": "#CC66FF",
+      "sourceCell": "G8"
+    },
+    {
+      "date": "2027-02-08",
+      "label": "Feriado",
+      "kind": "holiday",
+      "color": "#FFFF00",
+      "sourceCell": "M6"
+    },
+    {
+      "date": "2027-03-26",
+      "label": "Feriado",
+      "kind": "holiday",
+      "color": "#FFFF00",
+      "sourceCell": "Y8"
+    },
+    {
+      "date": "2027-04-19",
+      "label": "Provas Curriculares 51",
+      "kind": "exam",
+      "color": "#00B0F0",
+      "sourceCell": "E17",
+      "module": "51"
+    },
+    {
+      "date": "2027-04-20",
+      "label": "Provas Curriculares 51",
+      "kind": "exam",
+      "color": "#00B0F0",
+      "sourceCell": "F17",
+      "module": "51"
+    },
+    {
+      "date": "2027-04-21",
+      "label": "Feriado",
+      "kind": "holiday",
+      "color": "#FFFF00",
+      "sourceCell": "G17"
+    },
+    {
+      "date": "2027-04-22",
+      "label": "Provas Curriculares 51",
+      "kind": "exam",
+      "color": "#00B0F0",
+      "sourceCell": "H17",
+      "module": "51"
+    },
+    {
+      "date": "2027-04-23",
+      "label": "Provas Curriculares 51",
+      "kind": "exam",
+      "color": "#00B0F0",
+      "sourceCell": "I17",
+      "module": "51"
+    },
+    {
+      "date": "2027-04-24",
+      "label": "Provas Curriculares 51",
+      "kind": "exam",
+      "color": "#00B0F0",
+      "sourceCell": "J17",
+      "module": "51"
+    },
+    {
+      "date": "2027-04-26",
+      "label": "Provas Curriculares 51",
+      "kind": "exam",
+      "color": "#00B0F0",
+      "sourceCell": "E18",
+      "module": "51"
+    },
+    {
+      "date": "2027-04-27",
+      "label": "Provas Curriculares 51",
+      "kind": "exam",
+      "color": "#00B0F0",
+      "sourceCell": "F18",
+      "module": "51"
+    },
+    {
+      "date": "2027-04-28",
+      "label": "Provas Curriculares 51",
+      "kind": "exam",
+      "color": "#00B0F0",
+      "sourceCell": "G18",
+      "module": "51"
+    },
+    {
+      "date": "2027-04-29",
+      "label": "Provas Curriculares 51",
+      "kind": "exam",
+      "color": "#00B0F0",
+      "sourceCell": "H18",
+      "module": "51"
+    },
+    {
+      "date": "2027-04-30",
+      "label": "Provas Curriculares 51",
+      "kind": "exam",
+      "color": "#00B0F0",
+      "sourceCell": "I18",
+      "module": "51"
+    },
+    {
+      "date": "2027-05-01",
+      "label": "Feriado",
+      "kind": "holiday",
+      "color": "#FFFF00",
+      "sourceCell": "R14"
+    },
+    {
+      "date": "2027-05-10",
+      "label": "Feriado",
+      "kind": "holiday",
+      "color": "#FFFF00",
+      "sourceCell": "M16"
+    },
+    {
+      "date": "2027-05-14",
+      "label": "Publicação de Notas",
+      "kind": "results",
+      "color": "#0070C0",
+      "sourceCell": "Q16",
+      "module": "51"
+    },
+    {
+      "date": "2027-05-27",
+      "label": "Feriado",
+      "kind": "holiday",
+      "color": "#FFFF00",
+      "sourceCell": "P18"
+    },
+    {
+      "date": "2027-05-28",
+      "label": "Ponte",
+      "kind": "bridge",
+      "color": "#7F7F7F",
+      "sourceCell": "Q18"
+    },
+    {
+      "date": "2027-05-31",
+      "label": "Provas Substitutivas",
+      "kind": "substitute",
+      "color": "#CC66FF",
+      "sourceCell": "M19",
+      "module": "51"
+    },
+    {
+      "date": "2027-06-01",
+      "label": "Provas Substitutivas",
+      "kind": "substitute",
+      "color": "#CC66FF",
+      "sourceCell": "V14",
+      "module": "51"
+    },
+    {
+      "date": "2027-06-02",
+      "label": "Provas Substitutivas",
+      "kind": "substitute",
+      "color": "#CC66FF",
+      "sourceCell": "W14",
+      "module": "51"
+    },
+    {
+      "date": "2027-06-03",
+      "label": "Provas Substitutivas",
+      "kind": "substitute",
+      "color": "#CC66FF",
+      "sourceCell": "X14",
+      "module": "51"
+    },
+    {
+      "date": "2027-06-04",
+      "label": "Provas Substitutivas",
+      "kind": "substitute",
+      "color": "#CC66FF",
+      "sourceCell": "Y14",
+      "module": "51"
+    },
+    {
+      "date": "2027-06-05",
+      "label": "Provas Substitutivas",
+      "kind": "substitute",
+      "color": "#CC66FF",
+      "sourceCell": "Z14",
+      "module": "51"
+    },
+    {
+      "date": "2027-06-18",
+      "label": "Publicação de Notas",
+      "kind": "results",
+      "color": "#0070C0",
+      "sourceCell": "Y16",
+      "module": "51"
+    },
+    {
+      "date": "2027-06-28",
+      "label": "Provas Curriculares 52",
+      "kind": "exam",
+      "color": "#C55A11",
+      "sourceCell": "U18",
+      "module": "52"
+    },
+    {
+      "date": "2027-06-29",
+      "label": "Provas Curriculares 52",
+      "kind": "exam",
+      "color": "#C55A11",
+      "sourceCell": "V18",
+      "module": "52"
+    },
+    {
+      "date": "2027-06-30",
+      "label": "Provas Curriculares 52",
+      "kind": "exam",
+      "color": "#C55A11",
+      "sourceCell": "W18",
+      "module": "52"
+    },
+    {
+      "date": "2027-07-01",
+      "label": "Provas Curriculares 52",
+      "kind": "exam",
+      "color": "#C55A11",
+      "sourceCell": "H23",
+      "module": "52"
+    },
+    {
+      "date": "2027-07-02",
+      "label": "Provas Curriculares 52",
+      "kind": "exam",
+      "color": "#C55A11",
+      "sourceCell": "I23",
+      "module": "52"
+    },
+    {
+      "date": "2027-07-03",
+      "label": "Provas Curriculares 52",
+      "kind": "exam",
+      "color": "#C55A11",
+      "sourceCell": "J23",
+      "module": "52"
+    },
+    {
+      "date": "2027-07-05",
+      "label": "Provas Curriculares 52",
+      "kind": "exam",
+      "color": "#C55A11",
+      "sourceCell": "E24",
+      "module": "52"
+    },
+    {
+      "date": "2027-07-06",
+      "label": "Provas Curriculares 52",
+      "kind": "exam",
+      "color": "#C55A11",
+      "sourceCell": "F24",
+      "module": "52"
+    },
+    {
+      "date": "2027-07-07",
+      "label": "Provas Curriculares 52",
+      "kind": "exam",
+      "color": "#C55A11",
+      "sourceCell": "G24",
+      "module": "52"
+    },
+    {
+      "date": "2027-07-08",
+      "label": "Provas Curriculares 52",
+      "kind": "exam",
+      "color": "#C55A11",
+      "sourceCell": "H24",
+      "module": "52"
+    },
+    {
+      "date": "2027-07-09",
+      "label": "Provas Curriculares 52",
+      "kind": "exam",
+      "color": "#C55A11",
+      "sourceCell": "I24",
+      "module": "52"
+    },
+    {
+      "date": "2027-07-10",
+      "label": "Provas Curriculares 52",
+      "kind": "exam",
+      "color": "#C55A11",
+      "sourceCell": "J24",
+      "module": "52"
+    },
+    {
+      "date": "2027-07-23",
+      "label": "Publicação de Notas",
+      "kind": "results",
+      "color": "#0070C0",
+      "sourceCell": "I26",
+      "module": "52"
+    },
+    {
+      "date": "2027-08-16",
+      "label": "Provas Substitutivas",
+      "kind": "substitute",
+      "color": "#CC66FF",
+      "sourceCell": "M25",
+      "module": "52"
+    },
+    {
+      "date": "2027-08-17",
+      "label": "Provas Substitutivas",
+      "kind": "substitute",
+      "color": "#CC66FF",
+      "sourceCell": "N25",
+      "module": "52"
+    },
+    {
+      "date": "2027-08-18",
+      "label": "Provas Substitutivas",
+      "kind": "substitute",
+      "color": "#CC66FF",
+      "sourceCell": "O25",
+      "module": "52"
+    },
+    {
+      "date": "2027-08-19",
+      "label": "Provas Substitutivas",
+      "kind": "substitute",
+      "color": "#CC66FF",
+      "sourceCell": "P25",
+      "module": "52"
+    },
+    {
+      "date": "2027-08-20",
+      "label": "Provas Substitutivas",
+      "kind": "substitute",
+      "color": "#CC66FF",
+      "sourceCell": "Q25",
+      "module": "52"
+    },
+    {
+      "date": "2027-08-21",
+      "label": "Provas Substitutivas",
+      "kind": "substitute",
+      "color": "#CC66FF",
+      "sourceCell": "R25",
+      "module": "52"
+    },
+    {
+      "date": "2027-09-03",
+      "label": "Publicação de Notas",
+      "kind": "results",
+      "color": "#0070C0",
+      "sourceCell": "Y23",
+      "module": "52"
+    },
+    {
+      "date": "2027-09-06",
+      "label": "Ponte",
+      "kind": "bridge",
+      "color": "#7F7F7F",
+      "sourceCell": "U24"
+    },
+    {
+      "date": "2027-09-07",
+      "label": "Feriado",
+      "kind": "holiday",
+      "color": "#FFFF00",
+      "sourceCell": "V24"
+    },
+    {
+      "date": "2027-09-13",
+      "label": "Provas Curriculares 53",
+      "kind": "exam",
+      "color": "#A8D08D",
+      "sourceCell": "U25",
+      "module": "53"
+    },
+    {
+      "date": "2027-09-14",
+      "label": "Provas Curriculares 53",
+      "kind": "exam",
+      "color": "#A8D08D",
+      "sourceCell": "V25",
+      "module": "53"
+    },
+    {
+      "date": "2027-09-15",
+      "label": "Provas Curriculares 53",
+      "kind": "exam",
+      "color": "#A8D08D",
+      "sourceCell": "W25",
+      "module": "53"
+    },
+    {
+      "date": "2027-09-16",
+      "label": "Provas Curriculares 53",
+      "kind": "exam",
+      "color": "#A8D08D",
+      "sourceCell": "X25",
+      "module": "53"
+    },
+    {
+      "date": "2027-09-17",
+      "label": "Provas Curriculares 53",
+      "kind": "exam",
+      "color": "#A8D08D",
+      "sourceCell": "Y25",
+      "module": "53"
+    },
+    {
+      "date": "2027-09-18",
+      "label": "Provas Curriculares 53",
+      "kind": "exam",
+      "color": "#A8D08D",
+      "sourceCell": "Z25",
+      "module": "53"
+    },
+    {
+      "date": "2027-09-20",
+      "label": "Provas Curriculares 53",
+      "kind": "exam",
+      "color": "#A8D08D",
+      "sourceCell": "U26",
+      "module": "53"
+    },
+    {
+      "date": "2027-09-21",
+      "label": "Provas Curriculares 53",
+      "kind": "exam",
+      "color": "#A8D08D",
+      "sourceCell": "V26",
+      "module": "53"
+    },
+    {
+      "date": "2027-09-22",
+      "label": "Provas Curriculares 53",
+      "kind": "exam",
+      "color": "#A8D08D",
+      "sourceCell": "W26",
+      "module": "53"
+    },
+    {
+      "date": "2027-09-23",
+      "label": "Provas Curriculares 53",
+      "kind": "exam",
+      "color": "#A8D08D",
+      "sourceCell": "X26",
+      "module": "53"
+    },
+    {
+      "date": "2027-09-24",
+      "label": "Provas Curriculares 53",
+      "kind": "exam",
+      "color": "#A8D08D",
+      "sourceCell": "Y26",
+      "module": "53"
+    },
+    {
+      "date": "2027-09-25",
+      "label": "Provas Curriculares 53",
+      "kind": "exam",
+      "color": "#A8D08D",
+      "sourceCell": "Z26",
+      "module": "53"
+    },
+    {
+      "date": "2027-10-08",
+      "label": "Publicação de Notas",
+      "kind": "results",
+      "color": "#0070C0",
+      "sourceCell": "I32",
+      "module": "53"
+    },
+    {
+      "date": "2027-10-11",
+      "label": "Ponte",
+      "kind": "bridge",
+      "color": "#7F7F7F",
+      "sourceCell": "E33"
+    },
+    {
+      "date": "2027-10-12",
+      "label": "Feriado",
+      "kind": "holiday",
+      "color": "#FFFF00",
+      "sourceCell": "F33"
+    },
+    {
+      "date": "2027-10-25",
+      "label": "Provas Substitutivas",
+      "kind": "substitute",
+      "color": "#CC66FF",
+      "sourceCell": "E35",
+      "module": "53"
+    },
+    {
+      "date": "2027-10-26",
+      "label": "Provas Substitutivas",
+      "kind": "substitute",
+      "color": "#CC66FF",
+      "sourceCell": "F35",
+      "module": "53"
+    },
+    {
+      "date": "2027-10-27",
+      "label": "Provas Substitutivas",
+      "kind": "substitute",
+      "color": "#CC66FF",
+      "sourceCell": "G35",
+      "module": "53"
+    },
+    {
+      "date": "2027-10-28",
+      "label": "Provas Substitutivas",
+      "kind": "substitute",
+      "color": "#CC66FF",
+      "sourceCell": "H35",
+      "module": "53"
+    },
+    {
+      "date": "2027-10-29",
+      "label": "Provas Substitutivas",
+      "kind": "substitute",
+      "color": "#CC66FF",
+      "sourceCell": "I35",
+      "module": "53"
+    },
+    {
+      "date": "2027-10-30",
+      "label": "Provas Substitutivas",
+      "kind": "substitute",
+      "color": "#CC66FF",
+      "sourceCell": "J35",
+      "module": "53"
+    },
+    {
+      "date": "2027-11-01",
+      "label": "Ponte",
+      "kind": "bridge",
+      "color": "#7F7F7F",
+      "sourceCell": "M31"
+    },
+    {
+      "date": "2027-11-02",
+      "label": "Feriado",
+      "kind": "holiday",
+      "color": "#FFFF00",
+      "sourceCell": "N31"
+    },
+    {
+      "date": "2027-11-12",
+      "label": "Publicação de Notas",
+      "kind": "results",
+      "color": "#0070C0",
+      "sourceCell": "Q32",
+      "module": "53"
+    },
+    {
+      "date": "2027-11-15",
+      "label": "Feriado",
+      "kind": "holiday",
+      "color": "#FFFF00",
+      "sourceCell": "M33"
+    },
+    {
+      "date": "2027-11-20",
+      "label": "Feriado",
+      "kind": "holiday",
+      "color": "#FFFF00",
+      "sourceCell": "R33"
+    },
+    {
+      "date": "2027-11-22",
+      "label": "Provas Curriculares 54",
+      "kind": "exam",
+      "color": "#FFD965",
+      "sourceCell": "M34",
+      "module": "54"
+    },
+    {
+      "date": "2027-11-23",
+      "label": "Provas Curriculares 54",
+      "kind": "exam",
+      "color": "#FFD965",
+      "sourceCell": "N34",
+      "module": "54"
+    },
+    {
+      "date": "2027-11-24",
+      "label": "Provas Curriculares 54",
+      "kind": "exam",
+      "color": "#FFD965",
+      "sourceCell": "O34",
+      "module": "54"
+    },
+    {
+      "date": "2027-11-25",
+      "label": "Provas Curriculares 54",
+      "kind": "exam",
+      "color": "#FFD965",
+      "sourceCell": "P34",
+      "module": "54"
+    },
+    {
+      "date": "2027-11-26",
+      "label": "Provas Curriculares 54",
+      "kind": "exam",
+      "color": "#FFD965",
+      "sourceCell": "Q34",
+      "module": "54"
+    },
+    {
+      "date": "2027-11-27",
+      "label": "Provas Curriculares 54",
+      "kind": "exam",
+      "color": "#FFD965",
+      "sourceCell": "R34",
+      "module": "54"
+    },
+    {
+      "date": "2027-11-29",
+      "label": "Provas Curriculares 54",
+      "kind": "exam",
+      "color": "#FFD965",
+      "sourceCell": "M35",
+      "module": "54"
+    },
+    {
+      "date": "2027-11-30",
+      "label": "Provas Curriculares 54",
+      "kind": "exam",
+      "color": "#FFD965",
+      "sourceCell": "N35",
+      "module": "54"
+    },
+    {
+      "date": "2027-12-01",
+      "label": "Provas Curriculares 54",
+      "kind": "exam",
+      "color": "#FFD965",
+      "sourceCell": "W31",
+      "module": "54"
+    },
+    {
+      "date": "2027-12-02",
+      "label": "Provas Curriculares 54",
+      "kind": "exam",
+      "color": "#FFD965",
+      "sourceCell": "X31",
+      "module": "54"
+    },
+    {
+      "date": "2027-12-03",
+      "label": "Provas Curriculares 54",
+      "kind": "exam",
+      "color": "#FFD965",
+      "sourceCell": "Y31",
+      "module": "54"
+    },
+    {
+      "date": "2027-12-04",
+      "label": "Provas Curriculares 54",
+      "kind": "exam",
+      "color": "#FFD965",
+      "sourceCell": "Z31",
+      "module": "54"
+    },
+    {
+      "date": "2027-12-17",
+      "label": "Publicação de Notas",
+      "kind": "results",
+      "color": "#0070C0",
+      "sourceCell": "Y33",
+      "module": "54"
+    },
+    {
+      "date": "2027-12-25",
+      "label": "Feriado",
+      "kind": "holiday",
+      "color": "#FFFF00",
+      "sourceCell": "Z34"
+    }
+  ],
+  "notes": [
+    "Prova online no Studeo - são disciplinas que acontecem no formato online e as provas são disponibilizadas no Studeo sem a necessidade de agendamento, em caso de substitutiva, é necessário a solicitação do serviço."
+  ],
+  "warnings": [],
+  "version": "a92fc2c39c1f5bebf91b68dab1cf69d67a940269de78c1f63396e49a1ccf9590",
+  "fetchedAt": "2026-10-07T18:29:52.793Z"
+}

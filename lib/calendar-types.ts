@@ -1,0 +1,3 @@
+export type CalendarEvent = { id:string; title:string; category:string; module:string; start:string; end:string; sourceCell:string; sourceText:string; kind:"period"|"activity" };
+export type CalendarMark = {date:string; label:string; kind:"holiday"|"bridge"|"substitute"|"results"|"exam"; color:string; sourceCell:string; module?:string};
+export type CalendarData = {title:string; sheetName:string; academicYear:number; years:number[]; modules:string[]; moduleColors:Record<string,string>; events:CalendarEvent[]; marks:CalendarMark[]; notes:string[]; warnings:string[]; version:string; fetchedAt:string};
